@@ -9,6 +9,8 @@
     $ cd crystal-vagrant
     $ vagrant up
 
+**Note:** Don't forget to provision as an administrator.
+
 ## Usage
 A `./shared` folder will be generated on the host machine that links to `./vagrant` folder on the virtual machine.
 
