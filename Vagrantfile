@@ -4,6 +4,7 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = 'crystalBox'
 
     config.vm.provider "virtualbox" do |box|
+        box.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
         box.memory = 4096
         box.cpus = 6
     end
